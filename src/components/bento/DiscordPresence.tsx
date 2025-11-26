@@ -5,7 +5,7 @@ import { Skeleton } from '@/components/ui/skeleton'
 import { cn, getElapsedTime } from '@/lib/utils'
 import AvatarComponent from '@/components/ui/avatar'
 
-const DISCORD_USER_ID = '747519888347627550'
+const DISCORD_USER_ID = '1375400484738957363'
 
 interface Activity {
   type: number
