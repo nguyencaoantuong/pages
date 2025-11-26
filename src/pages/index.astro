@@ -42,7 +42,7 @@ const latestPost = await getAllPosts().then((posts) => posts.at(0))
                 >
                   Hey, I&rsquo;m ncat! I&rsquo;m a loser and i&rsquo;m from Vietnam.
                 </p>
-                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -59,8 +59,7 @@ const latestPost = await getAllPosts().then((posts) => posts.at(0))
             <p
               class="text-foreground/80 bg-background absolute top-1/2 left-0 mr-24 ml-4 -translate-y-1/2 border p-3 text-xs text-pretty"
             >
-              This blog contains educational resources pertaining to CTFs and
-              cybersecurity. I hope you enjoy reading!
+              I'm a kernel builder with my laptop have 4GB RAM (bad tho)
             </p>
           </div>
         </div>
@@ -202,45 +201,3 @@ const latestPost = await getAllPosts().then((posts) => posts.at(0))
     </div>
     <div class="aspect-square p-2 [grid-area:j]">
       <div class="bg-muted size-full border">
-        <WakatimeGraph client:load />
-      </div>
-    </div>
-    <div class="aspect-square p-2 [grid-area:k]">
-      <div data-trigger class="bg-muted size-full border">
-        <div
-          class="group/twitter relative flex size-full items-center justify-center bg-[url('/static/bento/twitter-background.png')] bg-cover bg-center bg-no-repeat"
-        >
-          <div
-            class="size-full bg-[url('/static/bento/twitter-foreground.png')] bg-cover bg-center bg-no-repeat transition-opacity duration-200 sm:opacity-0 sm:group-hover/twitter:opacity-100"
-            aria-hidden="true"
-          >
-            <p
-              class="text-foreground/80 bg-background absolute bottom-4 left-4 hidden border p-2 text-xs text-pretty sm:block"
-            >
-              TypeScript is<br />much better!
-            </p>
-          </div>
-          <Icon
-            name="mdi:twitter"
-            class="text-primary absolute size-1/2 sm:size-24"
-            aria-hidden="true"
-          />
-          <Link
-            href={SOCIAL_LINKS.find((link) => link.label === 'Twitter')?.href ||
-              '#'}
-            title="Visit my Twitter profile"
-            aria-label="Visit my Twitter profile"
-            external
-            class="bg-border/50 text-primary ring-ring group/twitter-link absolute end-0 bottom-0 m-3 rounded-full p-3 transition-[box-shadow] duration-300 hover:ring-2 focus-visible:ring-2"
-          >
-            <Icon
-              name="lucide:move-up-right"
-              class="transition-transform duration-300 group-hover/twitter-link:rotate-12"
-              size={16}
-            />
-          </Link>
-        </div>
-      </div>
-    </div>
-  </section>
-</Layout>
