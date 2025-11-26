@@ -1,9 +1,10 @@
 import type { IconMap, SocialLink, Site } from '@/types'
 
 export const SITE: Site = {
-  title: 'tuongg's page',
+  title: 'tuongg\'s page',
   description:
-    'i'm a loser from Vietnam',
+    // Tối ưu hóa mô tả này nếu cần, nhưng giữ nguyên nội dung gốc theo yêu cầu
+    'i\'m a loser from Vietnam',
   href: 'https://tuongg.vercel.app',
   author: 'nguyencaoantuong',
   locale: 'en-US',
@@ -11,6 +12,7 @@ export const SITE: Site = {
   postsPerPage: 4,
 }
 
+// Giả sử SocialLink là { href: string, label: string }
 export const NAV_LINKS: SocialLink[] = [
   {
     href: '/',
@@ -32,14 +34,17 @@ export const NAV_LINKS: SocialLink[] = [
 
 export const SOCIAL_LINKS: SocialLink[] = [
   {
+    // Đảm bảo Label khớp với key trong ICON_MAP
     href: 'https://github.com/nguyencaoantuong',
-    label: 'GitHub',
+    label: 'GitHub', 
   },
   {
+    // Đảm bảo Label khớp với key trong ICON_MAP
     href: 'mailto:ntuong@proton.me',
     label: 'Email',
   },
   {
+    // Đảm bảo Label khớp với key trong ICON_MAP
     href: '/rss.xml',
     label: 'RSS',
   },
