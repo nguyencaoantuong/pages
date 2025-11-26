@@ -42,12 +42,7 @@ const latestPost = await getAllPosts().then((posts) => posts.at(0))
                 >
                   Hey, I&rsquo;m ncat! I&rsquo;m a loser and i&rsquo;m from Vietnam.
                 </p>
-                <p
-                  class="text-foreground/80 bg-background block border p-3 text-sm text-pretty"
-                >
-                  >!
-                </p>
-              </div>
+                </div>
             </div>
           </div>
         </div>
@@ -97,17 +92,17 @@ const latestPost = await getAllPosts().then((posts) => posts.at(0))
             <p
               class="text-foreground/80 bg-background absolute bottom-4 left-16 border p-2 text-xs text-pretty sm:top-[42.5%] sm:right-4 sm:bottom-[inherit] sm:left-[inherit] sm:-translate-y-1/2"
             >
+              {latestPost?.data.title || 'No latest post found.'}
             </p>
           </div>
           <div class="p-3 sm:size-full sm:p-6">
             {
               latestPost && (
-                  <img
-                    src={latestPost.data.imageWithText?.src ?? '#'}
-                    alt={`Featured image for the latest post: ${latestPost.data.title}`}
-                    class="h-full border"
-                  />
-                </Link>
+                <img
+                  src={latestPost.data.imageWithText?.src ?? '#'}
+                  alt={`Featured image for the latest post: ${latestPost.data.title}`}
+                  class="h-full border"
+                />
               )
             }
           </div>
