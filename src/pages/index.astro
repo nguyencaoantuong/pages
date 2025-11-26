@@ -40,30 +40,11 @@ const latestPost = await getAllPosts().then((posts) => posts.at(0))
                 <p
                   class="text-foreground/80 bg-background block border p-3 text-sm text-pretty"
                 >
-                  Hey, I&rsquo;m Jason! I&rsquo;m a product engineer and security researcher based in Los Angeles.
+                  Hey, I&rsquo;m ncat! I&rsquo;m a loser and i&rsquo;m from Vietnam.
                 </p>
                 <p
                   class="text-foreground/80 bg-background block border p-3 text-sm text-pretty"
                 >
-                  Outside of my undergraduate studies, I work as an organizer and author for <Link
-                    href="https://en.wikipedia.org/wiki/Capture_the_flag_(cybersecurity)"
-                    external
-                    class="text-foreground decoration-muted-foreground hover:decoration-foreground font-medium break-words underline underline-offset-[3px] transition-colors"
-                    >security CTF</Link
-                  > competitions with <Link
-                    href="https://sekai.team"
-                    external
-                    class="text-foreground decoration-muted-foreground hover:decoration-foreground font-medium break-words underline underline-offset-[3px] transition-colors"
-                    >Project Sekai CTF</Link
-                  > and the <Link
-                    href="https://ctf.mt"
-                    external
-                    class="text-foreground decoration-muted-foreground hover:decoration-foreground font-medium break-words underline underline-offset-[3px] transition-colors"
-                    >Friendly Maltese Citizens</Link
-                  >. You can read more about me <Link
-                    href="/about"
-                    class="text-foreground decoration-muted-foreground hover:decoration-foreground font-medium break-words underline underline-offset-[3px] transition-colors"
-                    >here</Link
                   >!
                 </p>
               </div>
@@ -116,13 +97,11 @@ const latestPost = await getAllPosts().then((posts) => posts.at(0))
             <p
               class="text-foreground/80 bg-background absolute bottom-4 left-16 border p-2 text-xs text-pretty sm:top-[42.5%] sm:right-4 sm:bottom-[inherit] sm:left-[inherit] sm:-translate-y-1/2"
             >
-              Read my latest<br /> blog post!
             </p>
           </div>
           <div class="p-3 sm:size-full sm:p-6">
             {
               latestPost && (
-                <Link href={`/blog/${latestPost.id}`} class="flex h-full">
                   <img
                     src={latestPost.data.imageWithText?.src ?? '#'}
                     alt={`Featured image for the latest post: ${latestPost.data.title}`}
@@ -167,7 +146,7 @@ const latestPost = await getAllPosts().then((posts) => posts.at(0))
           </div>
         </div>
         <div class="flex size-full items-center justify-center p-8">
-          <GithubCalendar username="jktrn" client:load />
+          <GithubCalendar username="nguyencaoantuong" client:load />
         </div>
       </div>
     </div>
